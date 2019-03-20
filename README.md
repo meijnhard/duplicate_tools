@@ -37,14 +37,14 @@ DESCRIPTION
         
  EXAMPLES
  
- Searches for files in the /data/src folder that have equal size
- # duplicates.py -i /data/src -o /tmp -t s
+    Searches for files in the /data/src folder that have equal size
+    # duplicates.py -i /data/src -o /tmp -t s
  
- Searches for files in the /data/src folder that have the same filename and moves the duplicates to the /tmp folder
- # duplicates.py -i /data/src -o /tmp -t n -x
+    Searches for files in the /data/src folder that have the same filename and moves the duplicates to the /tmp folder
+    # duplicates.py -i /data/src -o /tmp -t n -x
  
- Searches for files in the /data/src folder with the same hash and moves the duplicates to the /tmp folder
- # duplicates.py -i /data/src -o /tmp -x
+    Searches for files in the /data/src folder with the same hash and moves the duplicates to the /tmp folder
+    # duplicates.py -i /data/src -o /tmp -x
  
  
  
