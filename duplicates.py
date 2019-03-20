@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 from os import walk, path, rename
 from os import path, stat
 from os import path, makedirs
@@ -86,8 +88,6 @@ class File:
         return f'File={self.get_path()} size={self.get_size_str()}'
 
 
-
-
 class Duplicate(File):
     def __init__(self, r, d, f):
         File.__init__(self, r, d, f)
@@ -117,8 +117,6 @@ class FileDuplicates(File):
 
     def print_duplicates_new_path(self, base, new_base):
         if len(self.duplicates) > 0:
-            #print("\norg:" + self.get_path() + " size=" + self.get_size_str())
-            #self.print_file()
             print(f'\n{super(FileDuplicates, self).to_string()}')
             for dup in self.duplicates:
                 print(f"  duplicate {dup.to_string()} --> new path={dup.move_path(base, new_base)}")
@@ -182,7 +180,6 @@ def run(sdir, ddir, execute, compareBy, db=files):
     if (execute):
         move_duplicates(sdir, ddir)
 
-# run()
 
 def main(argv):
     ddir = ''
