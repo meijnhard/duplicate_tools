@@ -14,14 +14,14 @@ SYNOPSIS
 
 DESCRIPTION
 
-    Basic script that searches for file duplicates in a directory tree. By default files are compared by hash (sha1) but 
+    Basic script that searches for file duplicates in a directory tree. By default files are compared by hashcode (sha1) but 
     files can also be compared by filename or size. 
     With the flag -x duplicates are moved to a separate folder where the path of a duplicate relative to the source 
     folder is preserved.
     
     -s input_dir
         The folder that is searched for duplicates. If a duplicate is found of a file, the first occurence is considered
-        the original file and subsequent occurences are considered duplicates.
+        the original file and subsequent occurrences are considered duplicates.
         
     -o output_dir
         The base folder where duplicates are moved to if the -x flag is used. The path relative to the input_dir 
